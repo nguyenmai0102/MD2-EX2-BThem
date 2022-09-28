@@ -3,6 +3,7 @@ package baitapthem1;
 import java.util.Scanner;
 
 public class baisomot {
+    // tong cac so chan la
     public static void main(String[] args) {
         int n;
         int sum = 0;

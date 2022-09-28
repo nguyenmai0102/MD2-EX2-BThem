@@ -3,6 +3,7 @@ package baitapthem1;
 import java.util.Scanner;
 
 public class bai4 {
+    // nhap so hoan hao
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("nhap n");

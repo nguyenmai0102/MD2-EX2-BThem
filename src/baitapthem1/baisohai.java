@@ -3,6 +3,8 @@ package baitapthem1;
 import java.util.Scanner;
 
 public class baisohai {
+    // tong ca so le
+
     public static void main(String[] args) {
         int m;
         int total = 0;

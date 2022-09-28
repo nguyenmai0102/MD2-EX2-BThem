@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class btthem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum;
+        String studentId ="", studentName="", phone="", email="", address="";
+        int year=2022;
+        int age =0;
 
         do {
             System.out.println("*************manu*********************");
@@ -13,38 +15,43 @@ public class btthem {
             System.out.println("Hiển thị thông tin sinh viên");
             System.out.println("Tính tuổi sinh viên");
             System.out.println(" Thoát");
+            System.out.println(" su lua chon cua ban");
+
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
                     // nhap thong tin sinh vien
-                    System.out.printf("input name");
-                    String name = scanner.nextLine();
-                    System.out.printf(" input yearBorn");
-                    String yearBorn = scanner.nextLine();
-                    System.out.printf("input address");
-                    String address = scanner.nextLine();
-                    System.out.printf("input numberPhone");
-                    String numberPhone = scanner.nextLine();
-                case 2:
-                    // hien thi thong tin sinh vien
-//                    System.out.printf("input name");
-//                    String name = scanner.nextLine();
-//                    System.out.printf(" input yearBorn");
-//                    String yearBorn = scanner.nextLine();
-//                    System.out.printf("input address");
-//                    String address = scanner.nextLine();
-//                    System.out.printf("input numberPhone");
-//                    String numberPhone = scanner.nextLine();
 
-//                    System.out.printf("%d\n", "student name is", name);
-//                    System.out.printf("%s\n", "student yearBorn is", yearBorn);
-//                    System.out.printf("%d\n", "student address is", address);
-//                    System.out.printf("%d\n", "student numberPhone is", numberPhone);
-//
+                    System.out.printf("input id\n");
+                    studentId = scanner.nextLine();
+                    System.out.printf("input name \n");
+                     studentName = scanner.nextLine();
+                    System.out.printf(" input yearBorn \n");
+                    year = scanner.nextInt();
+                    System.out.printf("input numberPhone\n");
+                    scanner.nextLine();
+                    phone= scanner.nextLine();
+                    System.out.printf("input email \n");
+                    email = scanner.nextLine();
+                    System.out.printf("input address \n");
+                    address = scanner.nextLine();
+                    break;
+                case 2:
+                    ///hien thi thong tin sinh vien
+
+
+                    System.out.printf("Student Id: %s\n ", studentId);
+                    System.out.printf("Student Name: %s \n", studentName);
+                    System.out.printf("year born: %s\n", year);
+                    System.out.printf("number phone: %s\n ", phone);
+                    System.out.printf("Email: %s \n ", email);
+                    System.out.printf("Address: %s  \n", address);
+                    break;
 
                 case 3:
                     // tinh tuoi sinh vien
-
+                    age=2022 -year;
+                    System.out.println("so tuoi cua sinh vien la: "+ age);
                 case 4:
                     System.exit(0);
                 default:

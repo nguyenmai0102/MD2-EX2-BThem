@@ -3,6 +3,7 @@ package baitapthem1;
 import java.util.Scanner;
 
 public class baithem3 {
+    // so nguyen to
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
